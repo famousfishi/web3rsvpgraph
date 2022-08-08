@@ -1,0 +1,17 @@
+{
+  "name": "web3rsvpgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ famousfishi/web3rsvpgraph",
+    "create-local": "graph create --node http://localhost:8020/ famousfishi/web3rsvpgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ famousfishi/web3rsvpgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 famousfishi/web3rsvpgraph"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.30.1",
+    "@graphprotocol/graph-ts": "0.27.0",
+    "@protofire/subgraph-toolkit": "^0.1.2"
+  }
+}
